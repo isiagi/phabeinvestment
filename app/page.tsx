@@ -1,5 +1,5 @@
-import Link from "next/link"
-import Image from "next/image"
+import Link from "next/link";
+import Image from "next/image";
 import {
   Building2,
   ChevronRight,
@@ -12,31 +12,32 @@ import {
   Phone,
   Mail,
   Award,
-} from "lucide-react"
-import { Navbar } from "@/components/navbar"
-import { TopNav } from "@/components/top-nav"
-import { ServiceSlider } from "@/components/service-slider"
-import { TeamSlider } from "@/components/team-slider"
-import { HeaderPattern } from "@/components/header-pattern"
-import { CornerDecoration } from "@/components/corner_decoration"
+} from "lucide-react";
+import { Navbar } from "@/components/navbar";
+import { TopNav } from "@/components/top-nav";
+import { ServiceSlider } from "@/components/service-slider";
+import { TeamSlider } from "@/components/team-slider";
+import { HeaderPattern } from "@/components/header-pattern";
+import { CornerDecoration } from "@/components/corner_decoration";
 
 // Import the CustomButton instead of the regular Button
-import { CustomButton } from "@/components/ui/custom-button"
-import { AnimatedSection } from "@/components/animated-section"
+import { CustomButton } from "@/components/ui/custom-button";
+import { AnimatedSection } from "@/components/animated-section";
 
 // Add this import at the top of the file
-import { FancyCorner } from "@/components/fancy_corner"
+import { FancyCorner } from "@/components/fancy_corner";
 // Add this import at the top of the file
-import { DecoratedTitle } from "@/components/decorated-title"
+import { DecoratedTitle } from "@/components/decorated-title";
 // Add this import at the top of the file
-import { ScrollToTop } from "@/components/scroll-to-top"
+import { ScrollToTop } from "@/components/scroll-to-top";
 
 export default function Home() {
   const services = [
     {
       icon: <Truck className="h-8 w-8 text-green" />,
       title: "Logistics Management",
-      description: "Efficient transportation, warehousing, and distribution solutions for your business.",
+      description:
+        "Efficient transportation, warehousing, and distribution solutions for your business.",
       href: "/logistics",
       image:
         "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -44,7 +45,8 @@ export default function Home() {
     {
       icon: <LineChart className="h-8 w-8 text-blue" />,
       title: "Consultancy Services",
-      description: "Expert advisory services to help your business grow and succeed in the Ugandan market.",
+      description:
+        "Expert advisory services to help your business grow and succeed in the Ugandan market.",
       href: "/consultancy",
       image:
         "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -52,7 +54,8 @@ export default function Home() {
     {
       icon: <Warehouse className="h-8 w-8 text-green" />,
       title: "Real Estate Development",
-      description: "Quality housing, commercial properties, and land development across Uganda.",
+      description:
+        "Quality housing, commercial properties, and land development across Uganda.",
       href: "/real-estate",
       image:
         "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -60,7 +63,8 @@ export default function Home() {
     {
       icon: <Banknote className="h-8 w-8 text-blue" />,
       title: "Financial Services",
-      description: "Comprehensive financial solutions including investment advisory and capital management.",
+      description:
+        "Comprehensive financial solutions including investment advisory and capital management.",
       href: "/financial-services",
       image:
         "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -68,12 +72,13 @@ export default function Home() {
     {
       icon: <Leaf className="h-8 w-8 text-yellowgreen" />,
       title: "Agribusiness",
-      description: "Sustainable farming, processing, and distribution of agricultural products.",
+      description:
+        "Sustainable farming, processing, and distribution of agricultural products.",
       href: "/agribusiness",
       image:
         "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
-  ]
+  ];
 
   const teamMembers = [
     {
@@ -132,20 +137,26 @@ export default function Home() {
       email: "grace@phabeinvestment.com",
       linkedin: "https://linkedin.com",
     },
-  ]
+  ];
 
   return (
     <div className="flex min-h-screen flex-col">
       <TopNav />
       <Navbar />
       <main className="flex-1">
-        <section id="home" className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden">
+        <section
+          id="home"
+          className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden"
+        >
           {/* Fancy Corner */}
           <FancyCorner color="#2e7d32" />
 
           <div className="container px-4 md:px-6 relative">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <AnimatedSection className="flex flex-col justify-center space-y-4" direction="left">
+              <AnimatedSection
+                className="flex flex-col justify-center space-y-4"
+                direction="left"
+              >
                 <div className="space-y-2">
                   <DecoratedTitle
                     as="h1"
@@ -156,13 +167,19 @@ export default function Home() {
                     Your Trusted Investment Partner in Uganda
                   </DecoratedTitle>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Phabe Investment Ltd offers comprehensive solutions in logistics management, consultancy services,
-                    real estate development, and agribusiness in Seeta Mukono, Uganda.
+                    Phabe Investment Ltd offers comprehensive solutions in
+                    logistics management, consultancy services, real estate
+                    development, and agribusiness in Seeta Mukono, Uganda.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <CustomButton className="bg-green hover:bg-green-dark">Our Services</CustomButton>
-                  <CustomButton variant="outline" className="border-green text-green hover:text-green-dark">
+                  <CustomButton className="bg-green hover:bg-green-dark">
+                    Our Services
+                  </CustomButton>
+                  <CustomButton
+                    variant="outline"
+                    className="border-green text-green hover:text-green-dark"
+                  >
                     Contact Us
                     <ChevronRight className="ml-1 h-4 w-4" />
                   </CustomButton>
@@ -181,7 +198,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="services" className="relative w-full py-12 md:py-24 lg:py-32 bg-muted/50 overflow-hidden">
+        <section
+          id="services"
+          className="relative w-full py-12 md:py-24 lg:py-32 bg-muted/50 overflow-hidden"
+        >
           {/* Corner Decoration */}
           <CornerDecoration variant="green" />
 
@@ -192,7 +212,8 @@ export default function Home() {
                   Our Services
                 </DecoratedTitle>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-                  We provide a range of professional services to help grow your business and investments.
+                  We provide a range of professional services to help grow your
+                  business and investments.
                 </p>
               </div>
             </AnimatedSection>
@@ -201,12 +222,21 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="team" className="relative w-full py-12 md:py-24 lg:py-32 bg-white overflow-hidden">
+        <section
+          id="team"
+          className="relative w-full py-12 md:py-24 lg:py-32 bg-white overflow-hidden"
+        >
           {/* Corner Decoration */}
           <CornerDecoration variant="dark" />
           {/* Header Pattern */}
-          <HeaderPattern className="top-0 right-0 w-96 h-96 opacity-10" variant="dark" />
-          <HeaderPattern className="bottom-0 left-0 w-96 h-96 opacity-10 rotate-180" variant="dark" />
+          <HeaderPattern
+            className="top-0 right-0 w-96 h-96 opacity-10"
+            variant="dark"
+          />
+          <HeaderPattern
+            className="bottom-0 left-0 w-96 h-96 opacity-10 rotate-180"
+            variant="dark"
+          />
 
           <div className="container px-4 md:px-6 relative">
             <AnimatedSection className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
@@ -215,7 +245,8 @@ export default function Home() {
                   Our Team
                 </DecoratedTitle>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-                  Meet the dedicated professionals behind Phabe Investment's success.
+                  Meet the dedicated professionals behind Phabe Investment's
+                  success.
                 </p>
               </div>
             </AnimatedSection>
@@ -224,16 +255,28 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="relative w-full py-12 md:py-24 lg:py-32 overflow-hidden">
+        <section
+          id="about"
+          className="relative w-full py-12 md:py-24 lg:py-32 overflow-hidden"
+        >
           {/* Corner Decoration */}
           <CornerDecoration variant="green" />
           {/* Header Pattern */}
-          <HeaderPattern className="top-0 right-0 w-96 h-96 opacity-10" variant="green" />
-          <HeaderPattern className="bottom-0 left-0 w-96 h-96 opacity-10 rotate-180" variant="green" />
+          <HeaderPattern
+            className="top-0 right-0 w-96 h-96 opacity-10"
+            variant="green"
+          />
+          <HeaderPattern
+            className="bottom-0 left-0 w-96 h-96 opacity-10 rotate-180"
+            variant="green"
+          />
 
           <div className="container px-4 md:px-6 relative">
             <div className="grid gap-10 px-10 md:gap-16 lg:grid-cols-2">
-              <AnimatedSection direction="left" className="flex items-center gap-6">
+              <AnimatedSection
+                direction="left"
+                className="flex items-center gap-6"
+              >
                 <div className="rounded-xl overflow-hidden -mt-16">
                   <Image
                     src="https://images.unsplash.com/photo-1664575599736-c5197c684128?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -253,14 +296,20 @@ export default function Home() {
                   />
                 </div>
               </AnimatedSection>
-              <AnimatedSection className="flex flex-col justify-center space-y-4" direction="right" delay={200}>
+              <AnimatedSection
+                className="flex flex-col justify-center space-y-4"
+                direction="right"
+                delay={200}
+              >
                 <div className="space-y-2">
                   <DecoratedTitle variant="purple" className="text-purple">
                     About Phabe Investment Ltd
                   </DecoratedTitle>
                   <p className="text-muted-foreground md:text-xl">
-                    Founded with a vision to transform the investment landscape in Uganda, Phabe Investment Ltd has
-                    grown to become a trusted partner for businesses and individuals seeking growth opportunities.
+                    Founded with a vision to transform the investment landscape
+                    in Uganda, Phabe Investment Ltd has grown to become a
+                    trusted partner for businesses and individuals seeking
+                    growth opportunities.
                   </p>
                 </div>
                 <ul className="grid gap-4">
@@ -273,8 +322,10 @@ export default function Home() {
                         Our Mission
                       </DecoratedTitle>
                       <p className="text-muted-foreground">
-                        To provide innovative and sustainable investment solutions that create value for our clients and
-                        contribute to the development of Uganda.
+                        Our mission is to identify and invest in high potential
+                        sectors, providing exceptional returns to our clients
+                        while contributing to the overall well being of society
+                        through responsible investing and sustainable practices.
                       </p>
                     </div>
                   </li>
@@ -287,25 +338,37 @@ export default function Home() {
                         Our Vision
                       </DecoratedTitle>
                       <p className="text-muted-foreground">
-                        To be the leading investment company in East Africa, known for excellence, integrity, and
-                        innovation.
+                        Our vision is to be the preferred investment partner,
+                        driving economic growth and creating sustainable
+                        development opportunities in Uganda and beyond.
                       </p>
                     </div>
                   </li>
                 </ul>
-                <CustomButton className="w-fit bg-green hover:bg-green-dark">Learn More About Us</CustomButton>
+                <CustomButton className="w-fit bg-green hover:bg-green-dark">
+                  Learn More About Us
+                </CustomButton>
               </AnimatedSection>
             </div>
           </div>
         </section>
 
         {/* Add this section after the "about" section and before the "testimonials" section */}
-        <section id="why-choose-us" className="relative w-full py-12 md:py-24 lg:py-32 bg-muted/30 overflow-hidden">
+        <section
+          id="why-choose-us"
+          className="relative w-full py-12 md:py-24 lg:py-32 bg-muted/30 overflow-hidden"
+        >
           {/* Corner Decoration */}
           <CornerDecoration variant="purple" />
           {/* Header Pattern */}
-          <HeaderPattern className="top-0 right-0 w-96 h-96 opacity-10" variant="purple" />
-          <HeaderPattern className="bottom-0 left-0 w-96 h-96 opacity-10 rotate-180" variant="purple" />
+          <HeaderPattern
+            className="top-0 right-0 w-96 h-96 opacity-10"
+            variant="purple"
+          />
+          <HeaderPattern
+            className="bottom-0 left-0 w-96 h-96 opacity-10 rotate-180"
+            variant="purple"
+          />
 
           <div className="container px-4 md:px-6 relative">
             <AnimatedSection className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
@@ -314,8 +377,9 @@ export default function Home() {
                   Why Choose Us
                 </DecoratedTitle>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-                  At Phabe Investment Ltd, we combine local expertise with international standards to deliver
-                  exceptional value to our clients.
+                  At Phabe Investment Ltd, we combine local expertise with
+                  international standards to deliver exceptional value to our
+                  clients.
                 </p>
               </div>
             </AnimatedSection>
@@ -326,22 +390,26 @@ export default function Home() {
                   {[
                     {
                       title: "Local Expertise",
-                      description: "Deep understanding of the Ugandan market and business environment",
+                      description:
+                        "Deep understanding of the Ugandan market and business environment",
                       icon: <MapPin className="h-10 w-10 text-purple" />,
                     },
                     {
                       title: "Proven Track Record",
-                      description: "Consistent delivery of high-quality services and strong returns on investment",
+                      description:
+                        "Consistent delivery of high-quality services and strong returns on investment",
                       icon: <LineChart className="h-10 w-10 text-green" />,
                     },
                     {
                       title: "Integrated Solutions",
-                      description: "Comprehensive services across multiple sectors for all your business needs",
+                      description:
+                        "Comprehensive services across multiple sectors for all your business needs",
                       icon: <Building2 className="h-10 w-10 text-purple" />,
                     },
                     {
                       title: "Ethical Practices",
-                      description: "Commitment to transparency, integrity, and sustainable business practices",
+                      description:
+                        "Commitment to transparency, integrity, and sustainable business practices",
                       icon: <Award className="h-10 w-10 text-green" />,
                     },
                   ].map((item, index) => (
@@ -352,17 +420,27 @@ export default function Home() {
                       type="fade-slide"
                     >
                       <div className="mb-4">{item.icon}</div>
-                      <h3 className="text-xl font-bold text-purple mb-2">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.description}</p>
+                      <h3 className="text-xl font-bold text-purple mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-muted-foreground">
+                        {item.description}
+                      </p>
                     </AnimatedSection>
                   ))}
                 </div>
                 <div className="flex justify-center">
-                  <CustomButton className="bg-green hover:bg-green-dark">Learn More About Our Approach</CustomButton>
+                  <CustomButton className="bg-green hover:bg-green-dark">
+                    Learn More About Our Approach
+                  </CustomButton>
                 </div>
               </AnimatedSection>
 
-              <AnimatedSection direction="right" delay={200} className="space-y-6">
+              <AnimatedSection
+                direction="right"
+                delay={200}
+                className="space-y-6"
+              >
                 <div className="relative h-[400px] overflow-hidden rounded-xl shadow-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -372,8 +450,12 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-6">
-                    <h3 className="text-2xl font-bold text-white mb-2">Expert Team</h3>
-                    <p className="text-white/90">Our professionals bring decades of combined experience</p>
+                    <h3 className="text-2xl font-bold text-white mb-2">
+                      Expert Team
+                    </h3>
+                    <p className="text-white/90">
+                      Our professionals bring decades of combined experience
+                    </p>
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
@@ -386,7 +468,9 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 p-4">
-                      <h3 className="text-lg font-bold text-white">Modern Facilities</h3>
+                      <h3 className="text-lg font-bold text-white">
+                        Modern Facilities
+                      </h3>
                     </div>
                   </div>
                   <div className="relative h-[200px] overflow-hidden rounded-xl shadow-lg">
@@ -398,7 +482,9 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 p-4">
-                      <h3 className="text-lg font-bold text-white">Client-Centered</h3>
+                      <h3 className="text-lg font-bold text-white">
+                        Client-Centered
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -407,12 +493,21 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="testimonials" className="relative w-full py-12 md:py-24 lg:py-32 bg-background overflow-hidden">
+        <section
+          id="testimonials"
+          className="relative w-full py-12 md:py-24 lg:py-32 bg-background overflow-hidden"
+        >
           {/* Corner Decoration */}
           <CornerDecoration variant="dark" />
           {/* Header Pattern */}
-          <HeaderPattern className="top-0 right-0 w-96 h-96 opacity-10" variant="dark" />
-          <HeaderPattern className="bottom-0 left-0 w-96 h-96 opacity-10 rotate-180" variant="dark" />
+          <HeaderPattern
+            className="top-0 right-0 w-96 h-96 opacity-10"
+            variant="dark"
+          />
+          <HeaderPattern
+            className="bottom-0 left-0 w-96 h-96 opacity-10 rotate-180"
+            variant="dark"
+          />
 
           <div className="container px-4 md:px-6 relative">
             <AnimatedSection className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -421,7 +516,8 @@ export default function Home() {
                   What Our Clients Say
                 </DecoratedTitle>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-                  Hear from businesses and individuals who have partnered with Phabe Investment Ltd.
+                  Hear from businesses and individuals who have partnered with
+                  Phabe Investment Ltd.
                 </p>
               </div>
             </AnimatedSection>
@@ -478,7 +574,9 @@ export default function Home() {
                         </svg>
                       ))}
                     </div>
-                    <blockquote className="text-muted-foreground italic">"{testimonial.quote}"</blockquote>
+                    <blockquote className="text-muted-foreground italic">
+                      "{testimonial.quote}"
+                    </blockquote>
                   </div>
                   <div className="mt-6 flex items-center gap-4">
                     <div className="rounded-full overflow-hidden h-12 w-12">
@@ -492,7 +590,9 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-semibold">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {testimonial.title}
+                      </p>
                     </div>
                   </div>
                 </AnimatedSection>
@@ -501,12 +601,21 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="relative w-full py-12 md:py-24 lg:py-32 bg-muted/30 overflow-hidden">
+        <section
+          id="contact"
+          className="relative w-full py-12 md:py-24 lg:py-32 bg-muted/30 overflow-hidden"
+        >
           {/* Corner Decoration */}
           <CornerDecoration variant="green" />
           {/* Header Pattern */}
-          <HeaderPattern className="top-0 right-0 w-96 h-96 opacity-10" variant="green" />
-          <HeaderPattern className="bottom-0 left-0 w-96 h-96 opacity-10 rotate-180" variant="green" />
+          <HeaderPattern
+            className="top-0 right-0 w-96 h-96 opacity-10"
+            variant="green"
+          />
+          <HeaderPattern
+            className="bottom-0 left-0 w-96 h-96 opacity-10 rotate-180"
+            variant="green"
+          />
 
           <div className="container px-4 md:px-6 relative">
             <div className="grid gap-8 lg:grid-cols-2">
@@ -516,8 +625,9 @@ export default function Home() {
                     Get in Touch
                   </DecoratedTitle>
                   <p className="text-muted-foreground md:text-xl">
-                    Ready to work with Phabe Investment Ltd? Contact us today to discuss your needs and discover how our
-                    services can help your business grow.
+                    Ready to work with Phabe Investment Ltd? Contact us today to
+                    discuss your needs and discover how our services can help
+                    your business grow.
                   </p>
                   <div className="grid gap-6 mt-8">
                     <div className="flex items-start gap-4">
@@ -526,7 +636,9 @@ export default function Home() {
                       </div>
                       <div>
                         <h3 className="font-bold text-purple">Call Us</h3>
-                        <p className="text-muted-foreground">+256 700 123 456</p>
+                        <p className="text-muted-foreground">
+                          +256 700 123 456
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -535,7 +647,9 @@ export default function Home() {
                       </div>
                       <div>
                         <h3 className="font-bold text-purple">Email Us</h3>
-                        <p className="text-muted-foreground">info@phabeinvestment.com</p>
+                        <p className="text-muted-foreground">
+                          info@phabeinvestment.com
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -544,15 +658,23 @@ export default function Home() {
                       </div>
                       <div>
                         <h3 className="font-bold text-purple">Visit Us</h3>
-                        <p className="text-muted-foreground">Plot 123, Main Street, Seeta, Mukono, Uganda</p>
+                        <p className="text-muted-foreground">
+                          Plot 123, Main Street, Seeta, Mukono, Uganda
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </AnimatedSection>
-              <AnimatedSection className="rounded-xl border bg-background p-6 shadow-lg" direction="right" delay={200}>
+              <AnimatedSection
+                className="rounded-xl border bg-background p-6 shadow-lg"
+                direction="right"
+                delay={200}
+              >
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-purple">Send Us a Message</h3>
+                  <h3 className="text-xl font-bold text-purple">
+                    Send Us a Message
+                  </h3>
                   <form className="grid gap-4">
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div className="space-y-2">
@@ -599,7 +721,10 @@ export default function Home() {
                         className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[120px]"
                       ></textarea>
                     </div>
-                    <CustomButton type="submit" className="w-full bg-green hover:bg-green-dark">
+                    <CustomButton
+                      type="submit"
+                      className="w-full bg-green hover:bg-green-dark"
+                    >
                       Send Message
                     </CustomButton>
                   </form>
@@ -618,8 +743,9 @@ export default function Home() {
                 <span className="text-xl font-bold">Phabe Investment Ltd</span>
               </div>
               <p className="text-white/90">
-                Your trusted investment partner in Uganda, offering comprehensive solutions in logistics, consultancy,
-                real estate, agribusiness, and financial services.
+                Your trusted investment partner in Uganda, offering
+                comprehensive solutions in logistics, consultancy, real estate,
+                agribusiness, and financial services.
               </p>
               <div className="flex space-x-4">
                 <Link href="#" className="text-white/80 hover:text-white">
@@ -652,7 +778,14 @@ export default function Home() {
                     strokeLinejoin="round"
                     className="h-5 w-5"
                   >
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                   </svg>
@@ -703,27 +836,42 @@ export default function Home() {
               </DecoratedTitle>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/logistics" className="text-white/80 hover:text-white">
+                  <Link
+                    href="/logistics"
+                    className="text-white/80 hover:text-white"
+                  >
                     Logistics Management
                   </Link>
                 </li>
                 <li>
-                  <Link href="/consultancy" className="text-white/80 hover:text-white">
+                  <Link
+                    href="/consultancy"
+                    className="text-white/80 hover:text-white"
+                  >
                     Consultancy Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/real-estate" className="text-white/80 hover:text-white">
+                  <Link
+                    href="/real-estate"
+                    className="text-white/80 hover:text-white"
+                  >
                     Real Estate Development
                   </Link>
                 </li>
                 <li>
-                  <Link href="/agribusiness" className="text-white/80 hover:text-white">
+                  <Link
+                    href="/agribusiness"
+                    className="text-white/80 hover:text-white"
+                  >
                     Agribusiness
                   </Link>
                 </li>
                 <li>
-                  <Link href="/financial-services" className="text-white/80 hover:text-white">
+                  <Link
+                    href="/financial-services"
+                    className="text-white/80 hover:text-white"
+                  >
                     Financial Services
                   </Link>
                 </li>
@@ -736,7 +884,10 @@ export default function Home() {
               </DecoratedTitle>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/about" className="text-white/80 hover:text-white">
+                  <Link
+                    href="/about"
+                    className="text-white/80 hover:text-white"
+                  >
                     About Us
                   </Link>
                 </li>
@@ -746,7 +897,10 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#testimonials" className="text-white/80 hover:text-white">
+                  <Link
+                    href="#testimonials"
+                    className="text-white/80 hover:text-white"
+                  >
                     Testimonials
                   </Link>
                 </li>
@@ -782,7 +936,9 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="h-5 w-5" />
-                  <span className="text-white/90">info@phabeinvestment.com</span>
+                  <span className="text-white/90">
+                    info@phabeinvestment.com
+                  </span>
                 </li>
               </ul>
               <div className="pt-2">
@@ -798,7 +954,9 @@ export default function Home() {
 
           <div className="mt-10 border-t border-white/20 pt-8">
             <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-              <p className="text-sm text-white/90">© 2025 Phabe Investment Ltd. All rights reserved.</p>
+              <p className="text-sm text-white/90">
+                © 2025 Phabe Investment Ltd. All rights reserved.
+              </p>
               <nav className="flex gap-4 sm:gap-6">
                 <Link
                   href="/privacy-policy"
@@ -825,5 +983,5 @@ export default function Home() {
       </footer>
       <ScrollToTop />
     </div>
-  )
+  );
 }

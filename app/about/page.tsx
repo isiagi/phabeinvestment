@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 import {
   Building2,
   Users,
@@ -13,23 +13,23 @@ import {
   TrendingUp,
   Briefcase,
   Users2,
-} from "lucide-react"
+} from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Navbar } from "@/components/navbar"
-import { TopNav } from "@/components/top-nav"
-import { AnimatedSection } from "@/components/animated-section"
-import { PageHeader } from "@/components/page-header"
-import { DecoratedTitle } from "@/components/decorated-title"
-import { ScrollToTop } from "@/components/scroll-to-top"
-import { Footer } from "@/components/footer"
-import { CoreValuesSlider } from "@/components/core-values-slider"
+import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/navbar";
+import { TopNav } from "@/components/top-nav";
+import { AnimatedSection } from "@/components/animated-section";
+import { PageHeader } from "@/components/page-header";
+import { DecoratedTitle } from "@/components/decorated-title";
+import { ScrollToTop } from "@/components/scroll-to-top";
+import { Footer } from "@/components/footer";
+import { CoreValuesSlider } from "@/components/core-values-slider";
 
 export const metadata = {
   title: "About Us | Phabe Investment Ltd",
   description:
     "Learn about Phabe Investment Ltd, our mission, vision, values, and the team behind our success in Uganda.",
-}
+};
 
 export default function AboutPage() {
   return (
@@ -53,15 +53,21 @@ export default function AboutPage() {
                   Our Story
                 </DecoratedTitle>
                 <p className="text-muted-foreground">
-                  Phabe Investments Limited is a dynamic and diversified company based in Uganda established and
-                  registered in 2024, offering a range of services in logistics, real estate, consultancy, financial
-                  services, and agribusiness. We specialize in sea and air cargo solutions, real estate development,
-                  financial advisory, and agricultural value addition to support businesses and individuals in Uganda
-                  and beyond.
+                  Phabe Investments Limited is a dynamic and diversified company
+                  based in Uganda established and registered in 2024, offering a
+                  range of services in logistics, real estate, consultancy,
+                  financial services, and agribusiness. We specialize in sea and
+                  air cargo solutions, real estate development, financial
+                  advisory, and agricultural value addition to support
+                  businesses and individuals in Uganda and beyond. With
+                  strategic global partnerships in China, Europe, UAE, and the
+                  USA, we facilitate seamless import and export operations,
+                  ensuring efficiency and affordability for our clients.
                 </p>
                 <p className="text-muted-foreground">
-                  With strategic global partnerships in China, Europe, UAE, and the USA, we facilitate seamless import
-                  and export operations, ensuring efficiency and affordability for our clients.
+                  With strategic global partnerships in China, Europe, UAE, and
+                  the USA, we facilitate seamless import and export operations,
+                  ensuring efficiency and affordability for our clients.
                 </p>
                 <div className="relative h-60 w-full overflow-hidden rounded-xl my-6">
                   <Image
@@ -72,10 +78,12 @@ export default function AboutPage() {
                   />
                 </div>
                 <p className="text-muted-foreground">
-                  What began as a small consultancy firm has grown into a diversified investment company with operations
-                  in logistics management, consultancy services, real estate development, agribusiness, and financial
-                  services. Our journey has been marked by a commitment to excellence, integrity, and sustainable
-                  growth.
+                  What began as a small consultancy firm has grown into a
+                  diversified investment company with operations in logistics
+                  management, consultancy services, real estate development,
+                  agribusiness, and financial services. Our journey has been
+                  marked by a commitment to excellence, integrity, and
+                  sustainable growth.
                 </p>
               </AnimatedSection>
               <AnimatedSection className="space-y-6" direction="up" delay={200}>
@@ -85,12 +93,19 @@ export default function AboutPage() {
                       <Target className="h-6 w-6 text-green" />
                     </div>
                     <div>
-                      <DecoratedTitle as="h3" variant="purple" size="sm" className="text-purple">
+                      <DecoratedTitle
+                        as="h3"
+                        variant="purple"
+                        size="sm"
+                        className="text-purple"
+                      >
                         Our Mission
                       </DecoratedTitle>
                       <p className="text-muted-foreground">
-                        To provide innovative and sustainable investment solutions that create value for our clients and
-                        contribute to the development of Uganda.
+                        Our mission is to identify and invest in high potential
+                        sectors, providing exceptional returns to our clients
+                        while contributing to the overall well being of society
+                        through responsible investing and sustainable practices.
                       </p>
                     </div>
                   </div>
@@ -101,12 +116,18 @@ export default function AboutPage() {
                       <Award className="h-6 w-6 text-green" />
                     </div>
                     <div>
-                      <DecoratedTitle as="h3" variant="purple" size="sm" className="text-purple">
+                      <DecoratedTitle
+                        as="h3"
+                        variant="purple"
+                        size="sm"
+                        className="text-purple"
+                      >
                         Our Vision
                       </DecoratedTitle>
                       <p className="text-muted-foreground">
-                        To be the leading investment company in East Africa, known for excellence, integrity, and
-                        innovation.
+                        Our vision is to be the preferred investment partner,
+                        driving economic growth and creating sustainable
+                        development opportunities in Uganda and beyond.
                       </p>
                     </div>
                   </div>
@@ -175,9 +196,12 @@ export default function AboutPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6 text-white">
-                <h3 className="text-2xl font-bold mb-2">Collaborative Excellence</h3>
+                <h3 className="text-2xl font-bold mb-2">
+                  Collaborative Excellence
+                </h3>
                 <p className="max-w-lg">
-                  Our team works together to deliver exceptional results for our clients and partners.
+                  Our team works together to deliver exceptional results for our
+                  clients and partners.
                 </p>
               </div>
             </div>
@@ -187,7 +211,10 @@ export default function AboutPage() {
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <AnimatedSection className="mx-auto max-w-5xl">
-              <DecoratedTitle variant="purple" className="text-purple text-center mb-8">
+              <DecoratedTitle
+                variant="purple"
+                className="text-purple text-center mb-8"
+              >
                 Our Goals
               </DecoratedTitle>
               <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-3">
@@ -195,7 +222,8 @@ export default function AboutPage() {
                   {
                     icon: <TrendingUp className="h-6 w-6 text-green" />,
                     title: "Sustainable Growth",
-                    description: "To achieve sustainable growth and profitability for our clients and stakeholders.",
+                    description:
+                      "To achieve sustainable growth and profitability for our clients and stakeholders.",
                   },
                   {
                     icon: <Award className="h-6 w-6 text-green" />,
@@ -216,8 +244,15 @@ export default function AboutPage() {
                     delay={150 * index}
                     type="fade-slide"
                   >
-                    <div className="rounded-full bg-green/10 p-3 w-fit">{goal.icon}</div>
-                    <DecoratedTitle as="h3" variant="purple" size="sm" className="text-purple">
+                    <div className="rounded-full bg-green/10 p-3 w-fit">
+                      {goal.icon}
+                    </div>
+                    <DecoratedTitle
+                      as="h3"
+                      variant="purple"
+                      size="sm"
+                      className="text-purple"
+                    >
                       {goal.title}
                     </DecoratedTitle>
                     <p className="text-muted-foreground">{goal.description}</p>
@@ -239,7 +274,10 @@ export default function AboutPage() {
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/30">
           <div className="container px-4 md:px-6">
             <AnimatedSection className="mx-auto max-w-5xl">
-              <DecoratedTitle variant="purple" className="text-purple text-center mb-8">
+              <DecoratedTitle
+                variant="purple"
+                className="text-purple text-center mb-8"
+              >
                 Our Team
               </DecoratedTitle>
               <div className="grid gap-8 grid-cols-1">
@@ -258,19 +296,24 @@ export default function AboutPage() {
                     </div>
                     <div className="md:w-2/3">
                       <p className="text-muted-foreground mb-4">
-                        At Phabe Investments Limited, our team is composed of experienced professionals with expertise
-                        across various sectors, including logistics, real estate, consultancy, financial services, and
-                        agribusiness. We are dedicated to delivering innovative and sustainable solutions that drive
-                        business growth and community development.
+                        At Phabe Investments Limited, our team is composed of
+                        experienced professionals with expertise across various
+                        sectors, including logistics, real estate, consultancy,
+                        financial services, and agribusiness. We are dedicated
+                        to delivering innovative and sustainable solutions that
+                        drive business growth and community development.
                       </p>
                       <p className="text-muted-foreground mb-4">
-                        Our diverse team brings a wealth of knowledge and a strong commitment to excellence, ensuring
-                        that we meet the unique needs of our clients. With a focus on efficiency, integrity, and
-                        customer satisfaction, we work collaboratively to provide high-quality services that support
-                        both local and international businesses.
+                        Our diverse team brings a wealth of knowledge and a
+                        strong commitment to excellence, ensuring that we meet
+                        the unique needs of our clients. With a focus on
+                        efficiency, integrity, and customer satisfaction, we
+                        work collaboratively to provide high-quality services
+                        that support both local and international businesses.
                       </p>
                       <p className="text-muted-foreground">
-                        Together, we are shaping a future of economic empowerment and sustainable development through
+                        Together, we are shaping a future of economic
+                        empowerment and sustainable development through
                         strategic investments and reliable service delivery.
                       </p>
                     </div>
@@ -284,7 +327,10 @@ export default function AboutPage() {
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <AnimatedSection className="mx-auto max-w-5xl">
-              <DecoratedTitle variant="purple" className="text-purple text-center mb-8">
+              <DecoratedTitle
+                variant="purple"
+                className="text-purple text-center mb-8"
+              >
                 Our Leadership Team
               </DecoratedTitle>
               <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -334,7 +380,9 @@ export default function AboutPage() {
                         {leader.name}
                       </DecoratedTitle>
                       <p className="text-green font-medium">{leader.title}</p>
-                      <p className="mt-2 text-muted-foreground">{leader.description}</p>
+                      <p className="mt-2 text-muted-foreground">
+                        {leader.description}
+                      </p>
                     </div>
                   </AnimatedSection>
                 ))}
@@ -351,10 +399,12 @@ export default function AboutPage() {
                   Target Audience
                 </DecoratedTitle>
                 <p className="text-muted-foreground">
-                  Our target audience includes both local and international clients who are looking for investment
-                  opportunities in Uganda. We cater to individuals, businesses, and institutions seeking to invest in
-                  sectors such as financial services, Agribusiness, Real Estate Development, Consultancy services, and
-                  Logistics Management.
+                  Our target audience includes both local and international
+                  clients who are looking for investment opportunities in
+                  Uganda. We cater to individuals, businesses, and institutions
+                  seeking to invest in sectors such as financial services,
+                  Agribusiness, Real Estate Development, Consultancy services,
+                  and Logistics Management.
                 </p>
                 <div className="relative h-60 w-full overflow-hidden rounded-xl my-6">
                   <Image
@@ -364,13 +414,20 @@ export default function AboutPage() {
                     className="object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <DecoratedTitle as="h3" variant="purple" size="sm" className="text-purple">
+                <DecoratedTitle
+                  as="h3"
+                  variant="purple"
+                  size="sm"
+                  className="text-purple"
+                >
                   Activities And Products
                 </DecoratedTitle>
                 <p className="text-muted-foreground">
-                  In our Financial Services we offer such as loans to SMEs, financial advisory services to low income
-                  individuals with the aim of empowering individuals and business with access to capital, which in turn
-                  will help to promote economic growth and development.
+                  In our Financial Services we offer such as loans to SMEs,
+                  financial advisory services to low income individuals with the
+                  aim of empowering individuals and business with access to
+                  capital, which in turn will help to promote economic growth
+                  and development.
                 </p>
               </AnimatedSection>
               <AnimatedSection className="space-y-6" direction="up" delay={200}>
@@ -382,7 +439,8 @@ export default function AboutPage() {
                     {
                       icon: <Globe className="h-6 w-6 text-green" />,
                       title: "Global Partnerships",
-                      description: "Strong networks in China, UAE, USA, and Europe.",
+                      description:
+                        "Strong networks in China, UAE, USA, and Europe.",
                     },
                     {
                       icon: <Target className="h-6 w-6 text-green" />,
@@ -400,11 +458,20 @@ export default function AboutPage() {
                       description: "Tailored solutions for client needs.",
                     },
                   ].map((advantage, index) => (
-                    <div key={advantage.title} className="flex items-start gap-4">
-                      <div className="rounded-full bg-green/10 p-3 mt-1">{advantage.icon}</div>
+                    <div
+                      key={advantage.title}
+                      className="flex items-start gap-4"
+                    >
+                      <div className="rounded-full bg-green/10 p-3 mt-1">
+                        {advantage.icon}
+                      </div>
                       <div>
-                        <h4 className="font-semibold text-purple">{advantage.title}</h4>
-                        <p className="text-muted-foreground">{advantage.description}</p>
+                        <h4 className="font-semibold text-purple">
+                          {advantage.title}
+                        </h4>
+                        <p className="text-muted-foreground">
+                          {advantage.description}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -417,7 +484,10 @@ export default function AboutPage() {
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <AnimatedSection className="mx-auto max-w-5xl">
-              <DecoratedTitle variant="purple" className="text-purple text-center mb-8">
+              <DecoratedTitle
+                variant="purple"
+                className="text-purple text-center mb-8"
+              >
                 Future Plans & Growth Strategies
               </DecoratedTitle>
               <div className="grid gap-8 sm:grid-cols-2">
@@ -445,12 +515,14 @@ export default function AboutPage() {
                     {
                       icon: <Target className="h-6 w-6 text-green" />,
                       title: "Strengthening Agribusiness",
-                      description: "Increased value addition in agricultural products.",
+                      description:
+                        "Increased value addition in agricultural products.",
                     },
                     {
                       icon: <Building2 className="h-6 w-6 text-green" />,
                       title: "Real Estate Investment",
-                      description: "Exploring opportunities across Uganda and East Africa.",
+                      description:
+                        "Exploring opportunities across Uganda and East Africa.",
                     },
                   ].map((plan, index) => (
                     <AnimatedSection
@@ -459,10 +531,16 @@ export default function AboutPage() {
                       delay={100 * index}
                       type="fade-slide"
                     >
-                      <div className="rounded-full bg-green/10 p-3">{plan.icon}</div>
+                      <div className="rounded-full bg-green/10 p-3">
+                        {plan.icon}
+                      </div>
                       <div>
-                        <h4 className="font-semibold text-purple">{plan.title}</h4>
-                        <p className="text-muted-foreground">{plan.description}</p>
+                        <h4 className="font-semibold text-purple">
+                          {plan.title}
+                        </h4>
+                        <p className="text-muted-foreground">
+                          {plan.description}
+                        </p>
                       </div>
                     </AnimatedSection>
                   ))}
@@ -479,12 +557,18 @@ export default function AboutPage() {
                 Join Our Journey
               </DecoratedTitle>
               <p className="mt-4 text-muted-foreground md:text-xl">
-                We're always looking for talented individuals to join our team and contribute to our mission of
-                transforming the investment landscape in Uganda.
+                We're always looking for talented individuals to join our team
+                and contribute to our mission of transforming the investment
+                landscape in Uganda.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row justify-center">
-                <Button className="bg-green hover:bg-green-dark">View Career Opportunities</Button>
-                <Button variant="outline" className="border-green text-green hover:bg-green/10">
+                <Button className="bg-green hover:bg-green-dark">
+                  View Career Opportunities
+                </Button>
+                <Button
+                  variant="outline"
+                  className="border-green text-green hover:bg-green/10"
+                >
                   Learn More About Our Culture
                 </Button>
               </div>
@@ -495,5 +579,5 @@ export default function AboutPage() {
       <Footer />
       <ScrollToTop />
     </div>
-  )
+  );
 }
